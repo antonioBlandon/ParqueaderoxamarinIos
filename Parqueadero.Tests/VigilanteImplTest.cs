@@ -101,7 +101,7 @@ namespace ParqueaderoT.Tests
             Vehiculo vehiculo = VehiculoBuilder.aVehicle().build();
             //Act
             long horasEnParqueadero = vigilante.calcularTiempoVehiculoParqueadero(vehiculo.getFechaIngreso(), vehiculo.getFechaSalida());
-            //Assert
+            //Assertdsedwse
             Assert.AreEqual(27, horasEnParqueadero);
         }
 
