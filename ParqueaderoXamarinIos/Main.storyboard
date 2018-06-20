@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="791">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.11372549019607843" green="0.51764705882352946" blue="0.94117647058823528" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="224" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="266" width="374" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="460" firstItem="224" firstAttribute="width" constant="374"/>
+                                    <constraint id="461" firstItem="224" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="225" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="315" width="374" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <state key="normal" title="Cobrar">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue id="1124" destination="956" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="1175" firstItem="225" firstAttribute="width" constant="374"/>
+                                    <constraint id="1176" firstItem="225" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <view contentMode="scaleToFill" id="226" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="86" width="374" height="148"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="220" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="8" y="8" width="358" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                        <constraints>
+                                            <constraint id="476" firstItem="220" firstAttribute="width" constant="358"/>
+                                            <constraint id="477" firstItem="220" firstAttribute="height" constant="21"/>
+                                        </constraints>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="222" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Ingrese la placa">
+                                        <rect key="frame" x="8" y="37" width="358" height="30"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cilindraje (En caso de ser motocicleta)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="221" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="8" y="75" width="358" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="223" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Ingrese Cilindraje en CC">
+                                        <rect key="frame" x="8" y="103.5" width="358" height="30"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <constraints>
+                                            <constraint id="1483" firstItem="223" firstAttribute="width" constant="358"/>
+                                            <constraint id="1485" firstItem="223" firstAttribute="height" constant="30"/>
+                                        </constraints>
+                                    </textField>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="1163" firstItem="226" firstAttribute="width" constant="374"/>
+                                    <constraint id="1164" firstItem="226" firstAttribute="height" constant="148"/>
+                                    <constraint id="1165" firstItem="220" firstAttribute="leading" secondItem="226" secondAttribute="leading" constant="8"/>
+                                    <constraint id="1166" firstItem="226" firstAttribute="trailing" secondItem="220" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="1167" firstItem="220" firstAttribute="top" secondItem="226" secondAttribute="top" constant="8"/>
+                                    <constraint id="1474" firstItem="220" firstAttribute="top" secondItem="226" secondAttribute="top" constant="8"/>
+                                    <constraint id="1475" firstItem="220" firstAttribute="leading" secondItem="226" secondAttribute="leading" constant="8"/>
+                                    <constraint id="1476" firstItem="226" firstAttribute="trailing" secondItem="220" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="1477" firstItem="222" firstAttribute="top" secondItem="220" secondAttribute="bottom" constant="8"/>
+                                    <constraint id="1478" firstItem="222" firstAttribute="leading" secondItem="226" secondAttribute="leading" constant="8"/>
+                                    <constraint id="1479" firstItem="226" firstAttribute="trailing" secondItem="222" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="1480" firstItem="223" firstAttribute="top" secondItem="221" secondAttribute="bottom" constant="8"/>
+                                    <constraint id="1481" firstItem="223" firstAttribute="leading" secondItem="226" secondAttribute="leading" constant="8"/>
+                                    <constraint id="1482" firstItem="226" firstAttribute="trailing" secondItem="223" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="1484" firstItem="226" firstAttribute="trailing" secondItem="223" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="1486" firstItem="223" firstAttribute="top" secondItem="221" secondAttribute="bottom" constant="8"/>
+                                    <constraint id="1487" firstItem="226" firstAttribute="bottom" secondItem="223" secondAttribute="bottom" constant="14"/>
+                                    <constraint id="1787" firstItem="221" firstAttribute="leading" secondItem="226" secondAttribute="leading" constant="8"/>
+                                    <constraint id="1788" firstItem="226" firstAttribute="trailing" secondItem="221" secondAttribute="trailing" constant="8"/>
+                                </constraints>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="457" firstItem="224" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="458" firstItem="224" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1160" firstItem="226" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22"/>
+                            <constraint id="1161" firstItem="226" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="1162" firstItem="226" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1168" firstItem="224" firstAttribute="top" secondItem="226" secondAttribute="bottom" constant="32"/>
+                            <constraint id="1172" firstItem="225" firstAttribute="top" secondItem="224" secondAttribute="bottom" constant="19"/>
+                            <constraint id="1173" firstItem="225" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="1174" firstItem="225" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                        </constraints>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnIrACobrar" destination="225" id="name-outlet-225"/>
+                        <outlet property="btnRegistrar" destination="224" id="name-outlet-224"/>
+                        <outlet property="textPlaca" destination="222" id="name-outlet-222"/>
+                        <outlet property="textCilindraje" destination="223" id="name-outlet-223"/>
+                    </connections>
+                    <navigationItem title="Registro Parqueadero" id="916" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="790">
+            <objects>
+                <navigationController id="791" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="793">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="917" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="794" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-605" y="-4"/>
+        </scene>
+        <scene sceneID="955">
+            <objects>
+                <viewController id="956" sceneMemberID="viewController" customClass="CobroParqueaderoController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="953"/>
+                        <viewControllerLayoutGuide type="bottom" id="954"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="957">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.11372549019607843" green="0.51764705882352946" blue="0.94117647058823528" alpha="1"/>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0.11372549019607843" green="0.51764705882352946" blue="0.94117647058823528" alpha="1"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2095" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Ingrese la placa">
+                                <rect key="frame" x="20" y="91" width="374" height="30"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="2213" firstItem="2095" firstAttribute="width" constant="374"/>
+                                    <constraint id="2214" firstItem="2095" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2101" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="135" width="374" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <state key="normal" title="Buscar">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="2102" firstItem="2101" firstAttribute="width" constant="374"/>
+                                    <constraint id="2103" firstItem="2101" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2104" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="294" width="374" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <state key="normal" title="Cobrar">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="2925" firstItem="2104" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <view contentMode="scaleToFill" id="2144" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="183" width="374" height="94"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2145" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="8" y="8" width="151" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                        <constraints>
+                                            <constraint id="2237" firstItem="2145" firstAttribute="width" constant="151"/>
+                                        </constraints>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cilindraje: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2149" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="8" y="34" width="151" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="2243" firstItem="2149" firstAttribute="width" constant="151"/>
+                                        </constraints>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha De Ingreso: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2200" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="8" y="62" width="151" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="2249" firstItem="2200" firstAttribute="width" constant="151"/>
+                                        </constraints>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2207" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="186" y="8" width="180" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="5435" firstItem="2207" firstAttribute="height" constant="21"/>
+                                        </constraints>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2208" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="186" y="36" width="180" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="2253" firstItem="2208" firstAttribute="width" constant="180"/>
+                                            <constraint id="2254" firstItem="2208" firstAttribute="height" constant="21"/>
+                                        </constraints>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2209" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="186" y="62" width="180" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" colorSpace="calibratedRGB" red="0.0784313725490196" green="0.44705882352941179" blue="1" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="2258" firstItem="2209" firstAttribute="width" constant="180"/>
+                                            <constraint id="2259" firstItem="2209" firstAttribute="height" constant="21"/>
+                                        </constraints>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="2230" firstItem="2144" firstAttribute="width" constant="374"/>
+                                    <constraint id="2231" firstItem="2144" firstAttribute="height" constant="94"/>
+                                    <constraint id="2234" firstItem="2145" firstAttribute="top" secondItem="2144" secondAttribute="top" constant="8"/>
+                                    <constraint id="2235" firstItem="2145" firstAttribute="leading" secondItem="2144" secondAttribute="leading" constant="8"/>
+                                    <constraint id="2238" firstItem="2207" firstAttribute="leading" secondItem="2145" secondAttribute="trailing" constant="27"/>
+                                    <constraint id="2239" firstItem="2207" firstAttribute="top" secondItem="2144" secondAttribute="top" constant="8"/>
+                                    <constraint id="2240" firstItem="2144" firstAttribute="trailing" secondItem="2207" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="2245" firstItem="2149" firstAttribute="leading" secondItem="2144" secondAttribute="leading" constant="8"/>
+                                    <constraint id="2246" firstItem="2149" firstAttribute="top" secondItem="2145" secondAttribute="bottom" constant="5"/>
+                                    <constraint id="2247" firstItem="2200" firstAttribute="leading" secondItem="2144" secondAttribute="leading" constant="8"/>
+                                    <constraint id="2248" firstItem="2200" firstAttribute="top" secondItem="2149" secondAttribute="bottom" constant="8"/>
+                                    <constraint id="2250" firstItem="2208" firstAttribute="leading" secondItem="2149" secondAttribute="trailing" constant="27"/>
+                                    <constraint id="2251" firstItem="2208" firstAttribute="top" secondItem="2207" secondAttribute="bottom" constant="7"/>
+                                    <constraint id="2252" firstItem="2144" firstAttribute="trailing" secondItem="2208" secondAttribute="trailing" constant="8"/>
+                                    <constraint id="2255" firstItem="2209" firstAttribute="leading" secondItem="2200" secondAttribute="trailing" constant="27"/>
+                                    <constraint id="2256" firstItem="2209" firstAttribute="top" secondItem="2208" secondAttribute="bottom" constant="5"/>
+                                    <constraint id="2257" firstItem="2144" firstAttribute="trailing" secondItem="2209" secondAttribute="trailing" constant="8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7043" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="340" width="374" height="30"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.11372549019607843" green="0.51764705882352946" blue="0.94117647058823528" alpha="1"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Mostrar Todo">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.11372549019607843" green="0.51764705882352946" blue="0.94117647058823528" alpha="1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint id="7053" firstItem="7043" firstAttribute="height" constant="30"/>
+                                    <constraint id="7054" firstItem="7043" firstAttribute="width" constant="374"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="7235" destination="7035" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2210" firstItem="2095" firstAttribute="top" secondItem="953" secondAttribute="bottom" constant="27"/>
+                            <constraint id="2211" firstItem="2095" firstAttribute="trailing" secondItem="957" secondAttribute="trailingMargin"/>
+                            <constraint id="2212" firstItem="2095" firstAttribute="leading" secondItem="957" secondAttribute="leadingMargin"/>
+                            <constraint id="2215" firstItem="2101" firstAttribute="leading" secondItem="957" secondAttribute="leadingMargin"/>
+                            <constraint id="2216" firstItem="2101" firstAttribute="trailing" secondItem="957" secondAttribute="trailingMargin"/>
+                            <constraint id="2217" firstItem="2101" firstAttribute="top" secondItem="2095" secondAttribute="bottom" constant="14"/>
+                            <constraint id="2227" firstItem="2144" firstAttribute="leading" secondItem="957" secondAttribute="leadingMargin"/>
+                            <constraint id="2228" firstItem="2144" firstAttribute="trailing" secondItem="957" secondAttribute="trailingMargin"/>
+                            <constraint id="2229" firstItem="2144" firstAttribute="top" secondItem="2101" secondAttribute="bottom" constant="18"/>
+                            <constraint id="2922" firstItem="2104" firstAttribute="leading" secondItem="957" secondAttribute="leadingMargin"/>
+                            <constraint id="2923" firstItem="2104" firstAttribute="trailing" secondItem="957" secondAttribute="trailingMargin"/>
+                            <constraint id="2924" firstItem="2104" firstAttribute="top" secondItem="2144" secondAttribute="bottom" constant="17"/>
+                            <constraint id="7050" firstItem="7043" firstAttribute="leading" secondItem="957" secondAttribute="leadingMargin"/>
+                            <constraint id="7051" firstItem="7043" firstAttribute="trailing" secondItem="957" secondAttribute="trailingMargin"/>
+                            <constraint id="7052" firstItem="7043" firstAttribute="top" secondItem="2104" secondAttribute="bottom" constant="16"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBuscarPlaca" destination="2101" id="name-outlet-2101"/>
+                        <outlet property="textBuscarPlaca" destination="2095" id="name-outlet-2095"/>
+                        <outlet property="btnCobrarParqueadero" destination="2104" id="name-outlet-2104"/>
+                        <outlet property="textPlaca" destination="2207" id="name-outlet-2207"/>
+                        <outlet property="textCilindraje" destination="2208" id="name-outlet-2208"/>
+                        <outlet property="textFechaIngreso" destination="2209" id="name-outlet-2209"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="958" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="10"/>
+        </scene>
+        <scene sceneID="7034">
+            <objects>
+                <tableViewController id="7035" sceneMemberID="viewController" customClass="ParqueaderoController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="7036">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7039" reuseIdentifier="itemVehiculo" customClass="VehicleTableViewCell" rowHeight="80">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7039" id="7040">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8070" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="116" y="8" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cilindraje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8071" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="116" y="34" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="tintColor" colorSpace="calibratedRGB" red="0.0392156862745098" green="0.37647058823529411" blue="1" alpha="1"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Ingreso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8072" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="116" y="61" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="10163" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="41" y="20" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="placaItemLabel" destination="8070" id="name-outlet-8070"/>
+                                    <outlet property="cilindrajeItemLabel" destination="8071" id="name-outlet-8071"/>
+                                    <outlet property="fechaIngresoItemLabel" destination="8072" id="name-outlet-8072"/>
+                                    <segue id="9293" destination="9019" kind="show" identifier="DetailsSegue"/>
+                                    <outlet property="ivTypeVehicle" destination="10163" id="name-outlet-10163"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7035" id="7037"/>
+                            <outlet property="delegate" destination="7035" id="7038"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7041" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="4"/>
+        </scene>
+        <scene sceneID="9018">
+            <objects>
+                <viewController id="9019" sceneMemberID="viewController" customClass="DetailsController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9016"/>
+                        <viewControllerLayoutGuide type="bottom" id="9017"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9020">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9024" translatesAutoresizingMaskIntoConstraints="NO" text="Label">
+                                <rect key="frame" x="70" y="358" width="274" height="79"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.9882352941176471" green="0.9882352941176471" blue="0.12941176470588237" alpha="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <constraints>
+                                    <constraint id="9723" firstItem="9024" firstAttribute="height" constant="79"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="9720" firstItem="9020" firstAttribute="trailingMargin" secondItem="9024" secondAttribute="trailing" constant="50"/>
+                            <constraint id="9721" firstItem="9024" firstAttribute="leading" secondItem="9020" secondAttribute="leadingMargin" constant="50"/>
+                            <constraint id="9722" firstItem="9024" firstAttribute="top" secondItem="9016" secondAttribute="bottom" constant="294"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelDetail" destination="9024" id="name-outlet-9024"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9021" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="4"/>
+        </scene>
+    </scenes>
+</document>
